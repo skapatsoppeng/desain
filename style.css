@@ -1,0 +1,316 @@
+/* Reset dan Variabel */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    background-color: var(--light-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition);
+}
+
+/* Navbar Styling */
+nav {
+    background-color: var(--primary-color);
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+}
+
+/* Section Styling */
+.section {
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    text-align: center;
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, rgba(236, 240, 241, 0.9), rgba(236, 240, 241, 0.7)), 
+                url('img/pattern.png');
+    background-size: cover;
+}
+
+#home p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    font-size: 1.2rem;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.right {
+    flex: 1;
+}
+
+/* Foto Profil */
+.foto-pemenang {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.foto-pemenang:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Biodata List */
+.right ul {
+    margin-top: 1.5rem;
+}
+
+.right li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.right li::before {
+    content: '•';
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gallery .item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.gallery .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.gallery .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: var(--transition);
+}
+
+.gallery .item:hover img {
+    transform: scale(1.05);
+}
+
+/* Kontak Section */
+#contact {
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    margin-top: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.contact-btn:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+    animation: fadeIn 0.8s ease forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .right {
+        margin-top: 2rem;
+    }
+    
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 1rem;
+    }
+    
+    nav a {
+        padding: 0.5rem 1rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    nav a {
+        display: block;
+        text-align: center;
+    }
+    
+    #home {
+        padding: 4rem 1rem;
+    }
+    
+    .section {
+        padding: 3rem 1rem;
+    }
+}

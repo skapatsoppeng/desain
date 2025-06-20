@@ -3,67 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Pemenang Desain Grafis</title>
+    <title>Profil Siswa SMKN 4 Soppeng</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/smk4soppeng.gif" type="image/x-icon">
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- Navbar Sederhana -->
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Biodata</a></li>
-            <li><a href="#portfolio">Portofolio</a></li>
-            <li><a href="#contact">Kontak</a></li>
-        </ul>
+        <div class="school-logo">
+            <img src="img/smk4soppeng.gif" alt="Logo SMKN 4 Soppeng">
+            <span>SMKN 4 Soppeng</span>
+        </div>
+        <div class="nav-links">
+            <!-- <a href="#home"><i class="fas fa-home"></i></a>
+            <a href="#about"><i class="fas fa-user"></i></a>
+            <a href="#achievements"><i class="fas fa-trophy"></i></a>
+            <a href="#academic"><i class="fas fa-book"></i></a> -->
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <!-- <i class="fas fa-bars"></i> -->
+        </button>
     </nav>
 
     <!-- Konten Utama -->
     <section id="home" class="section">
-        <h1>Selamat Datang di Portofolio</h1>
-        <p>Portofolio ini dibuat untuk menampilkan biodata dan karya dari pemenang lomba desain grafis SMK Negeri 4 Soppeng</p>
+        <div class="profile-header">
+            <div class="header-content">
+                <h1>Profil Siswa</h1>
+                <p>SMK Negeri 4 Soppeng </p>
+                <div class="school-moto">
+                    <p>"menyelenggarakan pendidikan kejuruan yang profesional, menciptakan tamatan yang cerdas dan berakhlak mulia, serta menyiapkan tamatan yang terampil dan siap kerja. "</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Biodata dan Foto -->
     <section id="about" class="section">
         <div class="container">
             <div class="left">
-                <img src="img/foto.jpg" alt="Foto Pemenang" class="foto-pemenang">
+                <div class="photo-frame">
+                    <img src="img/foto.jpg" alt="Foto Siswa" class="student-photo">
+                    <div class="student-id">
+                        <span>ID: SMK4SPG-2023-0123</span>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
             <div class="right">
-                <h2>Biodata</h2>
-                <ul>
-                    <li>Nama: Jamil Faiz Asmi</li>
-                    <li>Kelas: XII Perbankan</li>
-                    <li>Jurusan: Perbankan</li>
-                    <li>Prestasi: Juara 2 Lomba Desain Grafis Aksara Lontara</li>
-                    <li>Kontak: faiz@email.com</li>
-                </ul>
+                <h2><i class="fas fa-user-graduate"></i> Biodata Siswa</h2>
+                <div class="biodata-grid">
+                    <div class="bio-item">
+                        <span class="bio-label">Nama Lengkap</span>
+                        <span class="bio-value">Faiz Ahmad</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">NIS/NISN</span>
+                        <span class="bio-value">12345 / 0012345678</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Kelas/Jurusan</span>
+                        <span class="bio-value">XII Layanan Perbankan</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Tempat/Tgl Lahir</span>
+                        <span class="bio-value">Soppeng, 15 Januari 2006</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Alamat</span>
+                        <span class="bio-value">Jl. Pendidikan No. 12, Soppeng</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Status</span>
+                        <span class="bio-value active-status">Aktif</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Portofolio -->
-    <section id="portfolio" class="section">
-        <h2>Portofolio Desain Grafis</h2>
-        <div class="gallery">
-            <div class="item">
-                <img src="img/des1.jpg" alt="Desain 1">
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>SMKN 4 Soppeng</h4>
+                <p>Jl. Kayangan Lorong Teratai No. 121, Soppeng<br>Sulawesi Selatan, Indonesia</p>
             </div>
-            <div class="item">
-                <img src="img/des2.jpg" alt="Desain 2">
+            <div class="footer-section">
+                <h4>Kontak Sekolah</h4>
+                <p><i class="fas fa-phone"></i> (0484) 21041</p>
+                <p><i class="fas fa-envelope"></i> smkn4soppeng@gmail.com</p>
             </div>
-            <div class="item">
-                <img src="img/des3.jpg" alt="Desain 3">
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/smkn4soppeng/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/groups/SMK2SOPPENG/"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/channel/UCJTQ4HlkTs4cThSD-ztpSEQ"><i class="fab fa-youtube"></i></a>
+                    <a href="https://x.com/Smkn4S"><i class="fab fa-twitter"></i></a>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="footer-bottom">
+            <p>© 2025 SMK Negeri 4 Soppeng. All rights reserved.</p>
+            <p class="last-update">Developed by Ryz Universitas Lamappapoleonro</p>
+        </div>
+    </footer>
 
-    <!-- Kontak -->
-    <section id="contact" class="section">
-        <h2>Kontak</h2>
-        <p>Hubungi saya untuk proyek desain grafis lebih lanjut!</p>
-    </section>
-
+    <script src="script.js"></script>
 </body>
 </html>
